@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* arquivo sbre mim*/
+.sobremim{
+
+    display: flex;
+    justify-content:space-around;
+    height: 6vh;
+}
+
+/* configurar o botão*/
+.edna{
+    margin: -0;
+    margin-left: -70px;
+    height: 3vmin;
+}
+
+.profissao{
+    margin-right: 50px;
+    height: 12vh;
+}
+
+#menu-eu ul{
+    box-sizing: border-box;
+    list-style: none;
+    background-color:black;
+    display: flex;
+    width: 100%;
+    
+}
+.btn_entrar{
+    margin-right: 2px;
+    height: 4vh; /* Altura do botão*/
+    margin-top: 16px; /* margem do botão para cima */
+    color: #000;
+    background-color: white;
+    margin-right: 25px;
+    width: 5%;
+    border-radius: 5px;
+}
+
+.btn_entrar:hover{
+   background-color: aqua;
+   color: white;
+}
+
+
+body{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.menu-eu ul li {
+display: inline;
+
+}
+
+#menu ul li{
+    text-align: left;
+    list-style: none;
+    justify-content: left;
+
+}
+
+#menu-eu ul li a{
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .6s;
+}
+
+#menu-eu ul li a:hover{
+    background-color: aqua;
+}
+#menu-eu ul li:last-child a {
+    float: right;
+    background-color: blue;
+}
+
+/*configuração e validação do formulario por css*/
+.address {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #E5E5E5;
+    max-width: 100px;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.form{
+
+    display: block;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(103, 99, 99, 0.5);
+
+
+}
+.formu  {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: min-content;
+    gap:20px;
+    margin-left: 10px;
+    grid-row: 10;
+
+}
+.form_label{
+    display: block;
+    font-weight: 200;
+    padding: 10px;
+    cursor: pointer;
+}
+.form_group_imput{
+    position: relative;
+    margin-left: 10px;
+}
+.form_input{
+    width: 30%;
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    height: 25px;
+    line-height: 5px;
+    padding: 0 10px 0 10px;
+    transition: 3s ease all;
+    justify-content: space-between;
+    
+}
+
+
+
+.form_input:focus, textarea:focus{
+    border: 2px solid #0075ff;
+    outline: none;
+    box-shadow: 2px 0px 20px rgba(150, 150, 150, 0.4);
+    width: calc(50% - 10px);
+
+}
+.form_input_error {
+	font-size: 10px;
+	margin-bottom: 0;
+	display: none;
+    border: 2px solid !important;
+}
+.coments .textearea{
+    display: block;
+    width: 30%;
+    height: 30%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+    resize: none;
+
+}
+input:invalid, textarea:invalid{
+    border-color: red;
+}
+input:valid, textarea:valid{
+    border-color: green;
+}
+span{
+    position: relative;
+}
+span:invalid + span::before, textarea:invalid + span::before{
+    content:'✖' ;
+    color: red;
+
+}
+span:valid + span::before, textarea:valid + span::before{
+    content:'✓' ;
+    color: red;
+    
+}
+input + span::before{
+    position: absolute;
+}
+textarea + span::before{
+    position: absolute;
+}
+
+verificar
+.form_input_error-activo {
+	display: block;
+}
+verificar
+.form_validação {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+.form__checkbox {
+	margin-right: 10px;
+}
+#group_termos, #form_mensagem, #button_goup_btn{
+	grid-column: span 2;
+}
+#form_mensagem {
+	height: 25px;
+	line-height: 25px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 2px;
+	display: none;
+}
+#form_mensagem-activo {
+	display: block;
+}
+#form_mensagem span {
+	margin: 0;
+}
+#button_grupo_btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form_button_enviar {
+	height: 25px;
+	line-height: 25px;
+	width: 10%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+.form_button_enviar:hover {
+    box-shadow: 2px 0px 20px rgba(150,150,150, 1);
+}
+#form_msg_sucesso {
+	font-size: 14px;
+	color: green;
+	display: none;
+}
+#form_msg_sucesso-activo {
+
+	display: block;
+}
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formu_grupo-correcto .formu_validação {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formu_grupo-incorrecto .form_label {
+	color: #bb2929;
+}
+
+.formulario_grupo-incorrecto .form_validação {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formu_grupo-incorrecto .form_input {
+	border: 2px solid #bb2929;
+}
+
+
+table, th, td{
+    border: 1px solid black;
+
+
+}
+/*retirar uma das bordas*/
+table{
+    border-collapse: collapse;
+
+}
+/*ajustar espaço dentroda tabela*/
+th, td{
+    padding: 15px;
+    border-spacing: 10px;
+}
+/*layout */
+table{
+    width:100% ;
+    table-layout: auto;
+
+}
+/*alinhamento horizontal:text-align*/
+/*alinhamento horizontal:vertical-align*/
+
+th{
+    text-align: left;
+    height: 30px;
+    vertical-align: bottom;
+
+}
+
+posição vertical da legenda
+caption{
+    caption-side: bottom;
+
+}
+manipulação celulas vazias
+
+table{
+    empty-cells: hide;
+
+}
+ /*area de contato (footer)*/
+ footer {
+    
+    width: 220vh;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    position: absolute;
+    margin-top: 400px;
+
+
+ }
+  
+ .main-footer .btn-kikongo {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -1px;
+
+
+ }
+  
+
+
+
+ .btn-kikongo {
+    text-decoration: none;
+    border-radius: 3px;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    color: white;
+    box-shadow: 2px 2px 2px black ;
+    outline-color: none;
+    
+
+
+
+
+ }

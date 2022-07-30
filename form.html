@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Marisa</title>
+</head>
+<body>
+    <script src="post.js"></script>
+    <address>
+        
+        <form  class="formu" id="formu" methodo="post" action="index.html">
+            <fieldset>
+               <legend>Cadastro:</legend>
+                <!--grupo nome-->
+                <div class="form_group" id="group_nome">
+                    <label for="nome" class="form_label"> Nome</label>
+                    <div class="form_group_input">
+                        <input type="text" class="form_input" name="nome" id="nome" placeholder="" required maxlength="14" minlength="4" >
+                    
+                    </div>
+                    <span class="form_input_error">o nome precisa ter de 4 a 10 digitos e somente pode conter letras. </span>
+                </div>
+
+                <!--grupo sobrenome-->
+                <div class="form_group" id="group_sobrenome">
+                    <label for="sobrenome" class="form_label"> Sobrenome</label>
+                    <div class="form_group_input">
+                        <input type="text" class="form_input" name="sobrenome" placeholder="" required maxlength="14" minlength="4">
+                    </div>
+                    <span class="form_input_error">o sobrenome precisa ter de 4 a 10 digitos e somente pode conter letras </span>
+                </div>
+
+                <!--grupo email-->
+                <div class="form_group" id="group_email">
+                    <label for="email" class="form_label"> E-mail </label>
+                    <div class="form_group_input">
+                        <input type="email" class="form_input" name="email" placeholder="" required maxlength="25">
+                    </div>
+                    <span class="form_input_error">o email deve conter conter letras, numeros, pontos, caracters. </span>
+                </div>
+
+                <!--grupo Celular-->
+                <div class="form_group" id="goup_telefone">
+                    <label for="telefone" class="form_label"> Telefone</label>
+                    <div class="form_group_input">
+                        <input type="number" class="form_input" name="telefone" id="telefone" placeholder="" required maxlength="14" minlength="11">
+                    </div>
+                    <span class="form_input_error">o telefone deve conter apenas numeros, precisa ter 11 digitos </span>
+                </div>
+                <br>
+                 <!--grupo mensagem-->
+                <div class="coments" id="coments">
+                    <label for="msg">Comentarios ou Mensagem</label>
+                    <textarea class="textearea" name="mensagem" id="mensagem" cols="10" rows="5" placeholder=""></textarea>
+
+                </div>
+
+                <!--mensagem de erro caso o formulario não seja preenchido corrretamente-->
+                <div class="form_mensagem" id="form_mensagem">
+                    <span class="form_input_error"> <b>Error:</b> Por favor preencha o formulario corretamente. </span>
+                </div>
+
+                <!--termos e condiçoes-->
+                <div class="form_group" id="group_termos">
+                    <label class="form_label" for="">
+                        <input class="form_checkbox" type="checkbox" name="termos" id="termos">
+                        Aceito os termos e condiçoes
+                    </label>
+                </div>
+
+                <!--botão enviar-->
+                <div class="form_group" id="button_goup_btn">
+                
+                    <button type="submit" class="form_button_enviar" >Enviar</button>
+                    <div>
+                        <span class="form_msg_sucesso" id="form_msg_sucesso"> Formulario enviado com sucesso! </span>
+
+                    </div>
+                </div>
+            </fieldset>    
+        
+        </form>
+
+
+    </address>
+
+
+    <script src="formulario.js"></script>
+
+    
+</body>
+</html>
